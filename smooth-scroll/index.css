@@ -1,0 +1,26 @@
+.box1 {
+  height: 100vh;
+  background: rosybrown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2 {
+  height: 100vh;
+  background: rgb(143, 179, 188);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img {
+  width: 50%;
+  height: 60%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(214, 214, 214);
+  font-size: 32px;
+}
