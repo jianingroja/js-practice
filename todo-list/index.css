@@ -1,0 +1,181 @@
+/* remove the basic styling from browser  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #e2c35d, #d88771);
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+
+form button {
+  color: #d88771;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* for the transitiion to work  */
+form button:hover {
+  background: #d88771;
+  color: white;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+/* 神奇！ */
+.todo li {
+  flex: 1;
+}
+
+.trash-button,
+.complete-button {
+  background: #db522cda;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.complete-button {
+  background: #559758e0;
+}
+
+/* 具体todo项目左右内边距 */
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  /* .todo transition  */
+}
+
+/* never mind  */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; /*remove default arrow*/
+  outline: none;
+  border: none;
+  background-image: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+select {
+  color: #d88771;
+  font-family: "Poppins", sans-serif;
+  width: 12rem;
+  cursor: pointer;
+  padding: 1rem;
+
+  /* pointer-events: none; */
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #d88771;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  /* cursor: pointer; */
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.select:hover::after {
+  color: #d88771;
+  background: white;
+}
+/* never mind  */
+
+.status {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 20vh;
+}
+
+.status button {
+  color: #d88771;
+  background-color: white;
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  outline: none;
+}
+
+.status button:hover {
+  color: white;
+  background-color: #d88771;
+}
+
+.status button:focus {
+  color: rgb(233, 211, 193);
+  background-color: #cc684d;
+}
