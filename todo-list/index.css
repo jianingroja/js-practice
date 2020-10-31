@@ -32,6 +32,12 @@ form button {
   background: white;
 }
 
+form input {
+  font-family: "Poppins", sans-serif;
+  font-size: 24.5px;
+  color: #97462f;
+}
+
 form button {
   color: #d88771;
   background: white;
@@ -58,7 +64,8 @@ form button:hover {
 .todo {
   margin: 0.5rem;
   background: white;
-  color: black;
+  /* color: black; */
+  color: #97462f;
   font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -73,7 +80,7 @@ form button:hover {
 
 .trash-button,
 .complete-button {
-  background: #db522cda;
+  background: #319ab9da;
   color: white;
   border: none;
   padding: 1rem;
@@ -82,7 +89,7 @@ form button:hover {
 }
 
 .complete-button {
-  background: #559758e0;
+  background: #3e588fe0;
 }
 
 /* 具体todo项目左右内边距 */
@@ -156,6 +163,8 @@ select {
   justify-content: space-around;
   align-items: center;
   min-height: 20vh;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .status button {
