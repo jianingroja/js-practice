@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+/* used to detect the animation force 
+让卡片不要疯狂翻转 */
+.container {
+  /* background-color: whitesmoke; */
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: khaki; */
+}
+
+.card {
+  min-height: 80vh;
+  width: 35rem;
+  /* background-color: rgb(139, 164, 189); */
+  border-radius: 30px;
+  padding: 2rem 5rem 0rem;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+}
+
+.sneaker {
+  min-height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: lightcoral; */
+}
+
+.sneaker img {
+  width: 20rem;
+  z-index: 2;
+  transition: all 1.5s ease;
+}
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-image: url("./1.png");
+  opacity: 0.5;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  transition: all 1.5s ease;
+}
+
+.info h1 {
+  font-size: 3rem;
+  transition: all 0.75s ease-out;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  padding: 2rem 0rem;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.75s ease-out;
+}
+
+.sizes button {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #585858;
+}
+
+button.active {
+  background: #585858;
+  color: white;
+}
+
+.purchase {
+  margin: 3rem 0;
+  transition: all 0.75s ease-out;
+}
+
+.purchase button {
+  width: 100%;
+  padding: 1rem 0rem;
+  background: lightcoral;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: bolder;
+}
