@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.intro-text {
+  width: 30%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-in-out;
+}
+
+/* add it to the div  */
+.intro-appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+header {
+  height: 100vh;
+}
+header img {
+  height: 100%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+.intro-content img {
+  width: auto;
+  height: 60vh;
+}
